@@ -1,0 +1,5 @@
+.DS_Store
+build_planilha.py
+build_doc.js
+*.docx
+*.xlsx

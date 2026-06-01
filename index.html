@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Plano de Mídia · Porto Kaetê Hotel · Trilha</title>
+<link rel="preconnect" href="https://static.wixstatic.com" crossorigin>
+<style>
+/* ───── POLYSANS · TRILHA · WIX CDN ───── */
+@font-face{font-family:'PolySans Bulky Wide';font-style:normal;font-weight:800;font-display:swap;src:url('https://static.wixstatic.com/ufonts/44f42e_6715ad510f8f4f6fa30541c6df9a03e7/woff2/file.woff2') format('woff2'),url('https://static.wixstatic.com/ufonts/44f42e_6715ad510f8f4f6fa30541c6df9a03e7/woff/file.woff') format('woff')}
+@font-face{font-family:'PolySans Bulky';font-style:normal;font-weight:700;font-display:swap;src:url('https://static.wixstatic.com/ufonts/44f42e_808656c3944d427abd0adafe7597d810/woff2/file.woff2') format('woff2'),url('https://static.wixstatic.com/ufonts/44f42e_808656c3944d427abd0adafe7597d810/woff/file.woff') format('woff')}
+@font-face{font-family:'PolySans Median';font-style:normal;font-weight:500;font-display:swap;src:url('https://static.wixstatic.com/ufonts/fb1953_158350b0513342cda7fc854a95b4e172/woff2/file.woff2') format('woff2'),url('https://static.wixstatic.com/ufonts/fb1953_158350b0513342cda7fc854a95b4e172/woff/file.woff') format('woff')}
+@font-face{font-family:'PolySans Slim';font-style:normal;font-weight:400;font-display:swap;src:url('https://static.wixstatic.com/ufonts/fb1953_036c275183ca45bca9804e4e72fcf90f/woff2/file.woff2') format('woff2'),url('https://static.wixstatic.com/ufonts/fb1953_036c275183ca45bca9804e4e72fcf90f/woff/file.woff') format('woff')}
+@font-face{font-family:'PolySans Neutral';font-style:italic;font-weight:400;font-display:swap;src:url('https://static.wixstatic.com/ufonts/44f42e_d592374634674997a361dab4866716a2/woff2/file.woff2') format('woff2'),url('https://static.wixstatic.com/ufonts/44f42e_d592374634674997a361dab4866716a2/woff/file.woff') format('woff')}
+@font-face{font-family:'PolySans Median Wide';font-style:normal;font-weight:600;font-display:swap;src:url('https://static.wixstatic.com/ufonts/e440c8_215c457003a04c6a803c33ca8a5933af/woff2/file.woff2') format('woff2'),url('https://static.wixstatic.com/ufonts/e440c8_215c457003a04c6a803c33ca8a5933af/woff/file.woff') format('woff')}
+
+:root{
+  /* Paleta Trilha · base */
+  --bg:#e9e8e4;--bg-warm:#E8E8E3;--bg-dark:#1d1d1b;
+  --surface:#FFFFFF;--surface-soft:#f3f2ee;--surface-warm:#E8E8E3;
+  --border:#d8d6cf;--border-strong:#c2bfb5;--border-soft:#dfddd5;
+  --accent:#ee4c20;--accent-dark:#c43815;--accent-light:#fde0d3;--accent-soft:#fdeee6;
+  --copper:#e96735;--copper-dark:#c4501f;
+  --bege:#E8E8E3;--bege-dark:#c2bfb5;
+  --text:#212121;--text-soft:#454c47;--muted:#717c72;--light:#9eafaa;
+  --green-deep:#333A32;--green-soft:#e2e9e5;
+  --danger:#C13A1F;--danger-soft:#FAEBE7;
+  --success:#333A32;--success-soft:#e2e9e5;
+  --info:#2b5672;--info-soft:#E6EEF5;
+  /* Paleta cliente · Porto Kaetê */
+  --pk-brown:#6B4423;--pk-brown-dark:#4d3019;--pk-bege:#E8DCC4;--pk-bege-soft:#F5EFE0;--pk-medium:#8B6F47;
+  --r:20px;--r-sm:14px;--r-xs:8px;
+  --shadow-sm:0 1px 3px rgba(29,29,27,.04),0 1px 2px rgba(29,29,27,.06);
+  --shadow:0 4px 16px rgba(29,29,27,.06),0 1px 4px rgba(29,29,27,.04);
+  --shadow-md:0 12px 40px rgba(29,29,27,.08),0 2px 8px rgba(29,29,27,.04);
+  --shadow-lg:0 24px 64px rgba(29,29,27,.10),0 4px 16px rgba(29,29,27,.06);
+  --display:'PolySans Bulky Wide','PolySans Bulky',system-ui,sans-serif;
+  --heading:'PolySans Bulky','PolySans Median',system-ui,sans-serif;
+  --serif:'PolySans Bulky','PolySans Median',system-ui,sans-serif;
+  --sans:'PolySans Slim','PolySans Median',system-ui,sans-serif;
+  --medium:'PolySans Median',system-ui,sans-serif;
+  --italic:'PolySans Neutral','PolySans Slim',system-ui,sans-serif;
+  --mono:'PolySans Median',ui-monospace,monospace;
+  --max:1280px;--gutter:clamp(24px,4vw,48px);
+  /* Funnel colors · 5 campanhas */
+  --f1:#FFD4B8;--f1d:#FFB389;
+  --f2:#FFB389;--f2d:#FF8B5A;
+  --f3:#FF8B5A;--f3d:#F26A33;
+  --f4:#F26A33;--f4d:#ee4c20;
+  --f5:#ee4c20;--f5d:#c43815;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{
+  background:var(--bg);color:var(--text);font-family:var(--sans);
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  font-feature-settings:'ss01','cv11';
+  background-image:
+    radial-gradient(at 90% 5%,rgba(238,76,32,.05) 0,transparent 50%),
+    radial-gradient(at 10% 95%,rgba(107,68,35,.06) 0,transparent 50%);
+}
+
+/* ───── TYPOGRAPHY ───── */
+.serif{font-family:var(--serif)}
+.mono{font-family:var(--mono)}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:'';width:18px;height:1px;background:currentColor;display:inline-block}
+.eyebrow.muted{color:var(--muted)}
+.eyebrow.muted::before{background:var(--bege-dark)}
+.eyebrow.pk{color:var(--pk-brown)}
+.eyebrow.pk::before{background:var(--pk-brown)}
+
+h1.hero-title{font-family:var(--display);font-weight:800;font-size:clamp(38px,5.6vw,68px);line-height:1.02;letter-spacing:-0.035em;margin:0;color:var(--text)}
+h1.hero-title em{font-family:var(--italic);font-weight:400;color:var(--accent)}
+
+h2.section-title{font-family:var(--display);font-weight:800;font-size:clamp(38px,5.5vw,72px);line-height:1.02;letter-spacing:-0.035em;color:var(--text);margin-top:8px}
+h2.section-title em{font-family:var(--italic);font-weight:400;color:var(--accent)}
+h2.section-title em.pk{color:var(--pk-brown)}
+
+.lede{font-family:var(--sans);font-weight:400;font-size:clamp(17px,1.5vw,21px);line-height:1.55;color:var(--text-soft);max-width:62ch;letter-spacing:-0.005em}
+
+.card-title{font-family:var(--serif);font-weight:500;font-size:clamp(20px,1.8vw,26px);line-height:1.15;letter-spacing:-0.02em;color:var(--text)}
+.card-eyebrow{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+
+/* ───── NAV ───── */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(233,232,228,.85);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(217,207,194,.4)}
+.nav-inner{max-width:var(--max);margin:0 auto;padding:18px var(--gutter);display:flex;align-items:center;justify-content:space-between;gap:24px}
+.nav-brand{display:flex;align-items:center;gap:14px}
+.nav-mark{width:38px;height:38px;display:flex;align-items:center;justify-content:center}
+.nav-mark img{width:100%;height:100%;object-fit:contain}
+.nav-brand-text{display:flex;flex-direction:column;line-height:1.1}
+.nav-brand-text small{font-size:10px;color:var(--muted);font-weight:500;letter-spacing:.04em}
+.nav-brand-text b{font-size:14px;color:var(--text);font-weight:600;letter-spacing:-0.01em}
+.nav-cta{background:var(--text);color:var(--bg);border:none;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;padding:10px 18px;border-radius:999px;display:inline-flex;align-items:center;gap:8px;transition:all .2s}
+.nav-cta:hover{background:var(--accent);transform:translateY(-1px)}
+
+/* ───── MINI FUNNEL (side nav) ───── */
+.mini-funnel{position:fixed;right:24px;top:50%;transform:translateY(-50%);z-index:50;display:flex;flex-direction:column;gap:5px;background:rgba(255,255,255,.7);backdrop-filter:blur(10px);padding:16px 14px;border-radius:18px;border:1px solid var(--border-soft);box-shadow:var(--shadow)}
+.mini-funnel a{display:block;height:14px;border-radius:3px;transition:all .3s cubic-bezier(.2,0,.2,1);position:relative;text-decoration:none}
+.mini-funnel a:nth-child(1){width:90px;background:linear-gradient(90deg,var(--f1),var(--f1d))}
+.mini-funnel a:nth-child(2){width:74px;background:linear-gradient(90deg,var(--f2),var(--f2d))}
+.mini-funnel a:nth-child(3){width:54px;background:linear-gradient(90deg,var(--f3),var(--f3d))}
+.mini-funnel a:nth-child(4){width:42px;background:linear-gradient(90deg,var(--f4),var(--f4d))}
+.mini-funnel a:nth-child(5){width:34px;background:linear-gradient(90deg,var(--f5),var(--f5d))}
+.mini-funnel a:hover,.mini-funnel a.active{height:18px;box-shadow:0 0 14px rgba(238,76,32,.4);transform:scaleX(1.05)}
+.mini-funnel a::after{content:attr(data-name);position:absolute;right:calc(100% + 14px);top:50%;transform:translateY(-50%) translateX(6px);background:var(--text);color:var(--bg);padding:5px 12px;border-radius:999px;font-family:var(--sans);font-size:11px;font-weight:600;white-space:nowrap;opacity:0;pointer-events:none;transition:all .2s;letter-spacing:.01em}
+.mini-funnel a:hover::after,.mini-funnel a.active::after{opacity:1;transform:translateY(-50%) translateX(0)}
+@media(max-width:900px){.mini-funnel{display:none}}
+
+/* ───── CONTAINER ───── */
+.container{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.container-wide{max-width:1440px;margin:0 auto;padding:0 var(--gutter)}
+
+/* ───── SECTION ───── */
+section{padding:clamp(56px,7vw,100px) 0;position:relative}
+section.tight{padding:clamp(44px,5.5vw,72px) 0}
+section.dark{background:var(--bg-dark);color:var(--bg)}
+section.dark h2.section-title,section.dark h1.hero-title{color:var(--bg)}
+section.dark .lede{color:rgba(233,232,228,.8)}
+section.dark .eyebrow{color:var(--copper)}
+section.warm{background:var(--bg-warm)}
+section.pk-warm{background:linear-gradient(180deg,var(--pk-bege-soft) 0%,var(--bg) 100%)}
+
+.section-head{margin-bottom:clamp(48px,7vw,80px);max-width:880px}
+.section-marker{font-family:var(--italic);font-weight:400;font-size:14px;letter-spacing:.02em;color:var(--muted);margin-bottom:20px;display:flex;align-items:baseline;gap:14px}
+.section-marker .roman{font-size:56px;line-height:.9;color:var(--accent);font-weight:400;letter-spacing:-0.04em}
+
+/* ════════════════════════════════════════ */
+/* HERO · FUNIL DAS CAMPANHAS               */
+/* ════════════════════════════════════════ */
+.hero{min-height:100vh;padding:120px 0 60px;display:flex;align-items:center;position:relative;overflow:hidden;background:#ffffff}
+.hero::before{content:'';position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle at 15% 25%,rgba(238,76,32,.06),transparent 50%),radial-gradient(circle at 85% 75%,rgba(107,68,35,.08),transparent 50%)}
+.hero-content{position:relative;width:100%}
+.hero-intro{text-align:center;max-width:920px;margin:0 auto 60px}
+.hero-intro h1{margin-top:18px}
+.hero-intro .lede{margin:24px auto 0;max-width:620px}
+
+/* FUNNEL */
+.funnel{display:flex;flex-direction:column;gap:6px;max-width:1100px;margin:0 auto;padding:0 16px}
+.funnel-row{display:flex;align-items:center;text-decoration:none;color:inherit;margin:0 auto;border-radius:18px;padding:22px 32px;position:relative;cursor:pointer;transition:all .35s cubic-bezier(.2,0,.2,1);box-shadow:0 6px 20px rgba(0,0,0,.08),0 1px 3px rgba(0,0,0,.04);font-family:var(--sans);overflow:hidden;min-width:260px}
+.funnel-row::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 50%,rgba(255,255,255,.18),transparent 60%);pointer-events:none;border-radius:18px;opacity:0;transition:opacity .35s}
+.funnel-row:hover::after{opacity:1}
+.funnel-row:hover{transform:translateY(-4px) scale(1.012);box-shadow:0 16px 40px rgba(238,76,32,.25),0 4px 10px rgba(0,0,0,.08)}
+.funnel-row:active{transform:translateY(-2px) scale(1.006)}
+.f1{width:100%;background:linear-gradient(135deg,var(--f1),var(--f1d));color:#7A2E08}
+.f2{width:82%;background:linear-gradient(135deg,var(--f2),var(--f2d));color:#7A2E08}
+.f3{width:60%;background:linear-gradient(135deg,var(--f3),var(--f3d));color:#fff}
+.f4{width:48%;background:linear-gradient(135deg,var(--f4),var(--f4d));color:#fff}
+.f5{width:42%;background:linear-gradient(135deg,var(--f5),var(--f5d));color:#fff}
+.funnel-row.f4 .f-name,.funnel-row.f5 .f-name{font-size:clamp(17px,1.4vw,20px)}
+.funnel-row.f4 .f-sub,.funnel-row.f5 .f-sub{font-size:11.5px}
+.funnel-row.f4 .f-stat,.funnel-row.f5 .f-stat{font-size:11px}
+.funnel-row.f4 .f-stat b,.funnel-row.f5 .f-stat b{font-size:15px}
+
+.f-left{display:flex;flex-direction:column;line-height:1;flex-shrink:0;margin-right:24px;min-width:36px}
+.f-roman{font-family:var(--italic);font-weight:400;font-size:28px;letter-spacing:-0.02em;opacity:.7}
+.f-center{flex:1;display:flex;flex-direction:column;gap:4px;min-width:0}
+.f-tag{display:inline-flex;align-items:center;font-size:9.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:3px 10px;border-radius:999px;width:max-content;margin-bottom:4px;background:rgba(255,255,255,.28);border:1px solid rgba(255,255,255,.32);color:inherit;opacity:.95}
+.funnel-row.f1 .f-tag,.funnel-row.f2 .f-tag{background:rgba(122,46,8,.14);border-color:rgba(122,46,8,.22)}
+.f-name{font-family:var(--serif);font-weight:500;font-size:clamp(20px,1.8vw,26px);letter-spacing:-0.02em;line-height:1.1}
+.f-sub{font-size:13px;opacity:.75;font-weight:500;letter-spacing:-0.005em}
+.f-right{display:flex;align-items:center;gap:14px;flex-shrink:0;margin-left:16px}
+.f-stat{text-align:right;font-family:var(--mono);font-size:13px;font-weight:500;opacity:.85;letter-spacing:-0.01em}
+.f-stat b{display:block;font-family:var(--serif);font-weight:500;font-size:20px;letter-spacing:-0.02em;font-variant-numeric:tabular-nums;opacity:1}
+.f-arrow{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;transition:all .3s}
+.funnel-row:hover .f-arrow{background:rgba(255,255,255,.4);transform:translateX(4px)}
+.f1 .f-arrow,.f2 .f-arrow{background:rgba(122,46,8,.12);border-color:rgba(122,46,8,.2);color:#7A2E08}
+.funnel-row.f1:hover .f-arrow,.funnel-row.f2:hover .f-arrow{background:rgba(122,46,8,.22)}
+.f-arrow svg{width:14px;height:14px}
+
+@media(max-width:1024px){
+  .funnel-row{flex-direction:row;padding:18px 22px;min-width:auto;width:100%!important}
+  .funnel-row.f4 .f-name,.funnel-row.f5 .f-name{font-size:clamp(18px,1.8vw,22px)}
+  .funnel-row.f4 .f-sub,.funnel-row.f5 .f-sub{font-size:12.5px}
+}
+@media(max-width:760px){
+  .funnel-row{padding:16px 18px}
+  .f-stat{font-size:11px}.f-stat b{font-size:16px}
+  .f-name{font-size:18px}.f-sub{font-size:12px}.f-roman{font-size:22px}
+  .f-arrow{width:26px;height:26px}
+}
+
+.funnel-row{animation:slidIn .8s cubic-bezier(.2,0,.2,1) backwards}
+.funnel-row.f1{animation-delay:.15s}
+.funnel-row.f2{animation-delay:.28s}
+.funnel-row.f3{animation-delay:.41s}
+.funnel-row.f4{animation-delay:.54s}
+.funnel-row.f5{animation-delay:.67s}
+@keyframes slidIn{from{opacity:0;transform:translateY(20px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
+
+.hero-meta{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:80px;border-top:1px solid var(--border-strong);padding-top:36px;max-width:720px;margin-left:auto;margin-right:auto}
+@media(max-width:760px){.hero-meta{grid-template-columns:1fr;gap:24px 16px}}
+.hero-meta-item{padding-right:24px}
+.hero-meta-item small{font-size:10px;color:var(--muted);font-weight:700;letter-spacing:.15em;text-transform:uppercase;display:block;margin-bottom:6px}
+.hero-meta-item .v{font-family:var(--serif);font-weight:500;font-size:clamp(22px,2.4vw,30px);line-height:1;letter-spacing:-0.03em;color:var(--text);font-variant-numeric:tabular-nums}
+.hero-meta-item .v em{font-family:var(--italic);font-weight:400;color:var(--accent)}
+.hero-meta-item .v em.pk{color:var(--pk-brown)}
+.hero-meta-item p{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.4}
+
+/* ───── REVEAL ───── */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,0,.2,1),transform .9s cubic-bezier(.2,0,.2,1)}
+.reveal.in{opacity:1;transform:translateY(0)}
+.reveal.delay-1{transition-delay:.08s}
+.reveal.delay-2{transition-delay:.16s}
+.reveal.delay-3{transition-delay:.24s}
+
+/* ───── GRID ───── */
+.grid-12{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
+.g-12{grid-column:span 12}.g-8{grid-column:span 8}.g-6{grid-column:span 6}.g-5{grid-column:span 5}.g-7{grid-column:span 7}.g-4{grid-column:span 4}.g-3{grid-column:span 3}
+@media(max-width:900px){.g-8,.g-6,.g-5,.g-7,.g-4,.g-3{grid-column:span 12}}
+
+/* ───── CARD ───── */
+.card{background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--r);padding:32px 28px;transition:all .35s;display:flex;flex-direction:column;gap:18px}
+.card:hover{border-color:var(--border-strong);transform:translateY(-4px);box-shadow:var(--shadow-md)}
+.card-hd{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:0}
+.card-num{font-family:var(--italic);font-weight:400;font-size:24px;color:var(--muted);letter-spacing:-0.02em}
+
+/* ───── BADGES ───── */
+.bdg{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;font-size:11.5px;font-weight:600;letter-spacing:.01em;border:1px solid transparent;white-space:nowrap}
+.bdg-orange{background:var(--accent-soft);color:var(--accent-dark);border-color:var(--accent-light)}
+.bdg-red{background:var(--danger-soft);color:var(--danger);border-color:#F2D4CE}
+.bdg-green{background:var(--success-soft);color:var(--success);border-color:#C8E4D7}
+.bdg-bege{background:var(--bege);color:#7A6952;border-color:var(--bege-dark)}
+.bdg-info{background:var(--info-soft);color:var(--info);border-color:#C8D9E8}
+.bdg-amber{background:#FFF3D9;color:#8B6914;border-color:#F2DDA0}
+.bdg-copper{background:#F5EBD4;color:var(--copper-dark);border-color:#E5D4A3}
+.bdg-soft{background:var(--surface-soft);color:var(--muted);border-color:var(--border-soft)}
+.bdg-dark{background:var(--text);color:var(--bg)}
+.bdg-pk{background:var(--pk-bege);color:var(--pk-brown);border-color:#D9C8A3}
+
+/* ───── LIST ───── */
+.dash-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:10px}
+.dash-list li{font-size:14px;color:var(--text-soft);line-height:1.55;display:flex;gap:12px}
+.dash-list li::before{content:'';display:block;width:16px;height:1px;background:var(--bege-dark);margin-top:11px;flex-shrink:0}
+.dash-list.accent li::before{background:var(--accent)}
+.dash-list.pk li::before{background:var(--pk-brown)}
+
+/* ───── INSIGHT ───── */
+.insight{padding:24px 26px;border-radius:var(--r);border:1px solid;display:flex;flex-direction:column;gap:12px;font-size:14px;line-height:1.55}
+.insight.risk{background:linear-gradient(135deg,var(--danger-soft),var(--surface));border-color:#F2D4CE;color:#7A2828}
+.insight.win{background:linear-gradient(135deg,var(--success-soft),var(--surface));border-color:#C8E4D7;color:#1E5440}
+.insight.note{background:var(--surface-soft);border-color:var(--border-soft);color:var(--text-soft)}
+.insight.copper{background:#F5EBD4;border-color:#E5D4A3;color:var(--copper-dark)}
+.insight.pk{background:linear-gradient(135deg,var(--pk-bege-soft),var(--surface));border-color:#D9C8A3;color:var(--pk-brown-dark)}
+.insight strong{font-family:var(--serif);font-weight:500;font-size:18px;letter-spacing:-0.02em;color:var(--text);display:block;margin-bottom:2px}
+.insight ul{list-style:none;padding:0;display:flex;flex-direction:column;gap:8px}
+.insight ul li{font-size:13.5px;display:flex;gap:10px}
+.insight ul li::before{content:'';display:block;width:14px;height:1px;background:currentColor;opacity:.4;margin-top:10px;flex-shrink:0}
+
+/* ───── PUBLIC CARDS (públicos-alvo) ───── */
+.public-card{background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--r);overflow:hidden;transition:all .35s}
+.public-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--border-strong)}
+.pc-banner{height:110px;padding:24px 28px;display:flex;align-items:flex-end;position:relative}
+.pc-banner.corp{background:linear-gradient(135deg,var(--info-soft) 0%,#C8D9E8 100%)}
+.pc-banner.casais{background:linear-gradient(135deg,var(--accent-soft) 0%,#FFD9C2 100%)}
+.pc-banner.ar{background:linear-gradient(135deg,#E6F3F0 0%,#B8DFD3 100%)}
+.pc-banner-text{position:relative;z-index:1}
+.pc-banner-eyebrow{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--text-soft);margin-bottom:4px}
+.pc-banner-title{font-family:var(--serif);font-weight:500;font-size:28px;line-height:1;letter-spacing:-0.03em;color:var(--text)}
+.pc-banner-bdg{position:absolute;top:20px;right:24px}
+.pc-body{padding:24px 28px;display:flex;flex-direction:column;gap:20px}
+.pc-products{font-size:12.5px;color:var(--muted);line-height:1.5;padding-bottom:16px;border-bottom:1px solid var(--border-soft)}
+.pc-block-h{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.pc-text{font-size:14px;line-height:1.6;color:var(--text-soft)}
+.pc-text b{color:var(--text);font-weight:600}
+
+/* ───── ALLOCATION (divisão de verba) ───── */
+.alloc-row{display:grid;grid-template-columns:1.4fr 1fr auto;gap:18px;align-items:center;padding:18px 0;border-bottom:1px solid var(--border-soft);transition:background .15s}
+.alloc-row:last-child{border-bottom:none}
+.alloc-name{display:flex;flex-direction:column;gap:3px;min-width:0}
+.alloc-name b{font-family:var(--medium);font-weight:500;font-size:15.5px;color:var(--text);letter-spacing:-0.01em;line-height:1.2}
+.alloc-name small{font-size:11.5px;color:var(--muted);letter-spacing:.02em}
+.alloc-mid{font-size:13px;color:var(--text-soft);line-height:1.5}
+.alloc-mid b{color:var(--accent);font-family:var(--medium);font-weight:600}
+.alloc-pct{justify-self:end;font-family:var(--serif);font-weight:500;font-size:22px;letter-spacing:-0.02em;color:var(--text);font-variant-numeric:tabular-nums}
+.alloc-row.total{background:var(--surface-soft);margin-top:8px;padding:20px 16px;border-radius:var(--r-sm);border:none}
+.alloc-row.total .alloc-pct{color:var(--accent)}
+
+/* ───── MONTHLY DIVISION ───── */
+.month-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}
+@media(max-width:760px){.month-grid{grid-template-columns:1fr}}
+.month-card{background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--r);padding:24px 22px;display:flex;flex-direction:column;gap:14px;position:relative;overflow:hidden;transition:all .35s}
+.month-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--accent)}
+.month-card.m0::before{background:linear-gradient(90deg,var(--f1),var(--f2))}
+.month-card.m1::before{background:linear-gradient(90deg,var(--f3),var(--f4))}
+.month-card.m2::before{background:linear-gradient(90deg,var(--f5),var(--accent-dark))}
+.month-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--border-strong)}
+.month-eyebrow{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.month-name{font-family:var(--serif);font-weight:500;font-size:22px;line-height:1.1;letter-spacing:-0.02em;color:var(--text)}
+.month-name em{font-family:var(--italic);font-weight:400;color:var(--accent)}
+.month-value{font-family:var(--serif);font-weight:500;font-size:36px;letter-spacing:-0.03em;color:var(--accent);font-variant-numeric:tabular-nums;line-height:1}
+.month-pct{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:-8px}
+.month-desc{font-size:13px;color:var(--text-soft);line-height:1.5;border-top:1px solid var(--border-soft);padding-top:14px;margin-top:6px}
+
+/* ───── SALESBOT TIMELINE (Kaé/Tete) ───── */
+.bot-flow{display:flex;flex-direction:column;gap:0;margin-top:8px}
+.bot-step{display:grid;grid-template-columns:60px 1fr;gap:24px;padding:24px 0;border-top:1px solid var(--border-soft)}
+.bot-step:first-child{border-top:none;padding-top:0}
+.bot-step:last-child{padding-bottom:0}
+.bot-step-num{font-family:var(--italic);font-weight:400;font-size:36px;line-height:1;color:var(--muted);letter-spacing:-0.02em}
+.bot-step-num.accent{color:var(--accent)}.bot-step-num.copper{color:var(--copper-dark)}.bot-step-num.pk{color:var(--pk-brown)}
+.bot-step-content{display:flex;flex-direction:column;gap:12px}
+.bot-step-title{font-family:var(--serif);font-weight:500;font-size:20px;line-height:1.2;letter-spacing:-0.025em;color:var(--text)}
+.bot-step-meta{font-size:13px;color:var(--muted);line-height:1.5}
+.bot-msg{background:var(--surface-soft);border:1px solid var(--border-soft);border-radius:var(--r-sm);padding:16px 20px;font-size:14px;line-height:1.6;color:var(--text);position:relative;max-width:640px}
+.bot-msg::before{content:'';position:absolute;left:20px;top:-1px;width:28px;height:2px;background:var(--accent)}
+.bot-msg.pk::before{background:var(--pk-brown)}
+.bot-msg .from{display:block;font-size:9px;color:var(--muted);font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:8px}
+.bot-msg b{font-weight:600}
+.bot-branches{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+
+/* ───── CREATIVE CARDS ───── */
+.creative-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:8px}
+@media(max-width:760px){.creative-grid{grid-template-columns:1fr}}
+.creative-card{background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--r-sm);padding:22px 24px;display:flex;flex-direction:column;gap:12px;transition:all .25s}
+.creative-card:hover{border-color:var(--accent-light);transform:translateY(-2px);box-shadow:var(--shadow)}
+.creative-hd{display:flex;justify-content:space-between;align-items:center;gap:10px;padding-bottom:10px;border-bottom:1px solid var(--border-soft)}
+.creative-num{font-family:var(--italic);font-weight:400;font-size:22px;color:var(--accent);letter-spacing:-0.02em}
+.creative-name{font-family:var(--serif);font-weight:500;font-size:15px;letter-spacing:-0.01em;color:var(--text);flex:1}
+.creative-row{display:flex;gap:8px;align-items:baseline;font-size:13px;line-height:1.5}
+.creative-row b{font-family:var(--medium);font-weight:600;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);min-width:80px;flex-shrink:0}
+.creative-row span{color:var(--text-soft)}
+.creative-row.copy span{font-style:italic;color:var(--text)}
+
+/* ───── TIMELINE (cronograma) ───── */
+.timeline-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:32px}
+@media(max-width:900px){.timeline-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.timeline-grid{grid-template-columns:1fr}}
+.tl-card{background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--r-sm);padding:22px 22px 24px;display:flex;flex-direction:column;gap:12px;transition:all .35s;border-left:3px solid var(--bege-dark)}
+.tl-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--border-strong)}
+.tl-card.active{border-left-color:var(--accent);background:linear-gradient(180deg,var(--accent-soft) 0%,var(--surface) 30%)}
+.tl-card.peak{border-left-color:var(--success);background:linear-gradient(180deg,var(--success-soft) 0%,var(--surface) 30%)}
+.tl-card.critical{border-left-color:var(--danger);background:linear-gradient(180deg,var(--danger-soft) 0%,var(--surface) 30%)}
+.tl-eyebrow{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.tl-card.active .tl-eyebrow{color:var(--accent)}
+.tl-card.peak .tl-eyebrow{color:var(--success)}
+.tl-card.critical .tl-eyebrow{color:var(--danger)}
+.tl-month{font-family:var(--serif);font-weight:500;font-size:24px;letter-spacing:-0.02em;color:var(--text)}
+.tl-month em{font-family:var(--italic);font-weight:400;color:var(--muted);font-size:14px}
+.tl-items{display:flex;flex-direction:column;gap:6px;font-size:12.5px;color:var(--text-soft);line-height:1.5;margin-top:8px;padding-top:12px;border-top:1px solid var(--border-soft)}
+.tl-items b{color:var(--text);font-weight:600}
+
+/* ───── METRICS TABLE ───── */
+.metrics-table{background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);margin-top:32px}
+.metrics-table table{width:100%;border-collapse:collapse}
+.metrics-table th{text-align:left;padding:16px 20px;font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);background:var(--surface-soft);border-bottom:1px solid var(--border-soft);white-space:nowrap}
+.metrics-table td{padding:14px 20px;font-size:13.5px;border-bottom:1px solid var(--border-soft);vertical-align:middle}
+.metrics-table tr:last-child td{border-bottom:none}
+.metrics-table tr:hover td{background:var(--accent-soft)}
+.metrics-table td.num{font-family:var(--mono);font-size:12.5px;font-variant-numeric:tabular-nums;color:var(--text-soft)}
+.metrics-table td.num.meta{color:var(--accent);font-weight:600}
+
+section.dark .metrics-table{background:rgba(255,255,255,.04);border-color:rgba(233,232,228,.1)}
+section.dark .metrics-table th{background:rgba(233,232,228,.05);color:rgba(233,232,228,.5);border-color:rgba(233,232,228,.08)}
+section.dark .metrics-table td{color:var(--bg);border-color:rgba(233,232,228,.06)}
+section.dark .metrics-table td.num{color:rgba(233,232,228,.75)}
+section.dark .metrics-table td.num.meta{color:var(--accent)}
+section.dark .metrics-table tr:hover td{background:rgba(238,76,32,.08)}
+
+/* ───── CHECKLIST ───── */
+.check-list{display:flex;flex-direction:column;gap:10px;margin-top:24px}
+.check-item{display:flex;gap:14px;align-items:center;background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--r-sm);padding:14px 20px;transition:all .2s}
+.check-item:hover{border-color:var(--border-strong);transform:translateX(3px)}
+.check-box{width:20px;height:20px;border-radius:5px;border:2px solid var(--bege-dark);flex-shrink:0;background:var(--surface)}
+.check-text{font-size:14px;color:var(--text-soft);line-height:1.5}
+.check-text b{color:var(--text);font-weight:600}
+
+/* ───── TIER ANALYSIS (praças) ───── */
+.tier-grid{display:flex;flex-direction:column;gap:14px;margin-top:8px}
+.tier-card{display:grid;grid-template-columns:auto 1fr;gap:24px;background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--r);padding:22px 26px;border-left:3px solid var(--bege-dark);transition:all .3s}
+.tier-card:hover{border-color:var(--border-strong);transform:translateX(3px);box-shadow:var(--shadow-sm)}
+.tier-card.tier-1{border-left-color:var(--accent)}
+.tier-card.tier-2{border-left-color:var(--pk-brown)}
+.tier-card.tier-3{border-left-color:var(--copper)}
+.tier-card.tier-int{border-left-style:dashed;border-left-color:var(--info)}
+.tier-num{font-family:var(--italic);font-weight:400;font-size:34px;color:var(--muted);letter-spacing:-0.02em;line-height:1;min-width:48px;align-self:flex-start;padding-top:2px}
+.tier-card.tier-1 .tier-num{color:var(--accent)}
+.tier-card.tier-2 .tier-num{color:var(--pk-brown)}
+.tier-card.tier-3 .tier-num{color:var(--copper)}
+.tier-card.tier-int .tier-num{color:var(--info)}
+.tier-h{display:flex;justify-content:space-between;align-items:baseline;gap:14px;margin-bottom:8px;flex-wrap:wrap}
+.tier-label{font-family:var(--serif);font-weight:500;font-size:18px;color:var(--text);letter-spacing:-0.02em;line-height:1.2}
+.tier-cities{font-family:var(--medium);font-weight:500;font-size:13.5px;color:var(--accent);margin-bottom:10px;letter-spacing:.01em;line-height:1.4}
+.tier-card.tier-2 .tier-cities{color:var(--pk-brown)}
+.tier-card.tier-3 .tier-cities{color:var(--copper-dark)}
+.tier-card.tier-int .tier-cities{color:var(--info)}
+.tier-desc{font-size:13px;color:var(--text-soft);line-height:1.6}
+.tier-desc b{color:var(--text);font-weight:600}
+@media(max-width:760px){.tier-card{grid-template-columns:1fr;padding:18px 20px}.tier-num{margin-bottom:4px}}
+
+/* ───── MOODBOARD ───── */
+.mb-category{margin-bottom:48px}
+.mb-category:last-child{margin-bottom:0}
+.mb-cat-h{display:flex;align-items:baseline;gap:14px;padding-bottom:12px;border-bottom:1px solid var(--border-strong);margin-bottom:18px}
+.mb-cat-h .mb-cat-num{font-family:var(--italic);font-weight:400;font-size:32px;color:var(--accent);letter-spacing:-0.02em;line-height:1}
+.mb-cat-h .mb-cat-name{font-family:var(--serif);font-weight:500;font-size:22px;color:var(--text);letter-spacing:-0.02em}
+.mb-cat-h .mb-cat-meta{margin-left:auto;font-size:10px;color:var(--muted);letter-spacing:.18em;text-transform:uppercase;font-weight:600}
+
+.mb-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media(max-width:900px){.mb-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.mb-grid{grid-template-columns:1fr}}
+
+.mb-item{position:relative;aspect-ratio:1;border-radius:var(--r-sm);overflow:hidden;background:linear-gradient(135deg,var(--bg-warm) 0%,var(--surface-soft) 100%);border:1px solid var(--border-soft);transition:all .35s cubic-bezier(.2,0,.2,1)}
+.mb-item:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--border-strong)}
+.mb-item.feature{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+.mb-item.wide{grid-column:span 2;aspect-ratio:2/1}
+@media(max-width:900px){.mb-item.feature{grid-column:span 2;grid-row:auto;aspect-ratio:1}.mb-item.wide{grid-column:span 2;aspect-ratio:auto}}
+@media(max-width:560px){.mb-item.feature,.mb-item.wide{grid-column:span 1;aspect-ratio:1}}
+
+.mb-img{position:absolute;inset:0;background-size:cover;background-position:center;background-repeat:no-repeat}
+.mb-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--muted);opacity:.4;pointer-events:none;z-index:0}
+.mb-placeholder svg{width:36px;height:36px}
+.mb-placeholder-text{font-size:9.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;margin-top:10px}
+
+.mb-overlay{position:absolute;bottom:0;left:0;right:0;padding:16px 18px 14px;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 50%,rgba(0,0,0,.85) 100%);color:#fff;z-index:2;pointer-events:none}
+.mb-label{font-family:var(--medium);font-weight:600;font-size:13.5px;letter-spacing:.01em;line-height:1.2}
+.mb-desc{font-size:11.5px;opacity:.85;line-height:1.45;margin-top:4px}
+.mb-tag{position:absolute;top:12px;left:12px;background:rgba(255,255,255,.85);backdrop-filter:blur(6px);color:var(--text);font-size:9.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:5px 9px;border-radius:999px;z-index:2}
+.mb-tag.priority{background:var(--accent);color:#fff}
+
+.mb-folder-note{display:flex;align-items:center;gap:14px;background:var(--surface);border:1px dashed var(--border-strong);border-radius:var(--r-sm);padding:16px 20px;margin-top:36px}
+.mb-folder-note svg{width:20px;height:20px;color:var(--accent);flex-shrink:0}
+.mb-folder-note p{font-size:13px;color:var(--text-soft);line-height:1.5;margin:0}
+.mb-folder-note b{color:var(--text)}
+.mb-folder-note code{font-family:var(--mono);font-size:12px;background:var(--surface-soft);padding:2px 7px;border-radius:4px;color:var(--accent)}
+
+/* ───── SPLIT BAR (plataformas) ───── */
+.split-bar{display:flex;height:72px;border-radius:var(--r-sm);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--border-soft)}
+.split-seg{display:flex;flex-direction:column;justify-content:center;padding:0 26px;width:var(--w);transition:width 1.4s cubic-bezier(.2,0,.2,1);position:relative;color:#fff;min-width:0}
+.split-seg.meta{background:linear-gradient(135deg,var(--accent),var(--accent-dark))}
+.split-seg.google{background:linear-gradient(135deg,var(--pk-brown),var(--pk-brown-dark))}
+.split-name{font-family:var(--serif);font-weight:500;font-size:18px;letter-spacing:-0.02em;line-height:1.1;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.split-name .split-pct{font-family:var(--mono);font-size:12px;font-weight:600;opacity:.85;padding:3px 8px;background:rgba(255,255,255,.18);border-radius:999px;letter-spacing:.04em}
+.split-val{font-family:var(--mono);font-size:13px;font-weight:500;margin-top:4px;opacity:.85;letter-spacing:-0.01em}
+@media(max-width:760px){
+  .split-bar{flex-direction:column;height:auto}
+  .split-seg{width:100%!important;padding:18px 24px}
+}
+
+/* ───── DONUT CHART (consolidado) ───── */
+.donut-wrap{display:flex;flex-direction:column;align-items:center;gap:18px;padding:14px 0 6px}
+.donut{
+  width:240px;height:240px;border-radius:50%;
+  background:conic-gradient(
+    var(--accent) 0deg 129.6deg,
+    var(--accent-dark) 129.6deg 180deg,
+    #b85a3f 180deg 230.4deg,
+    var(--copper) 230.4deg 277.2deg,
+    var(--info) 277.2deg 313.2deg,
+    var(--pk-medium) 313.2deg 345.6deg,
+    #4a7090 345.6deg 360deg
+  );
+  position:relative;box-shadow:0 8px 24px rgba(0,0,0,.08),0 2px 6px rgba(0,0,0,.04);
+  transform:rotate(-2deg);transition:transform .6s cubic-bezier(.2,0,.2,1)
+}
+.donut:hover{transform:rotate(0deg) scale(1.02)}
+.donut::before{content:'';position:absolute;inset:48px;border-radius:50%;background:var(--surface);border:1px solid var(--border-soft)}
+.donut-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:1;text-align:center;transform:rotate(2deg)}
+.donut-center small{font-size:9.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.donut-center b{font-family:var(--serif);font-weight:500;font-size:38px;color:var(--text);letter-spacing:-0.03em;font-variant-numeric:tabular-nums;margin-top:4px;line-height:1}
+.donut-center .donut-meta{font-size:11px;color:var(--muted);margin-top:4px;font-weight:500}
+
+/* ───── CHANNEL LIST (consolidado) ───── */
+.canal-list{display:flex;flex-direction:column;gap:6px;margin-top:6px}
+.canal-row{display:grid;grid-template-columns:14px 1fr 96px;gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid var(--border-soft)}
+.canal-row:last-child{border-bottom:none}
+.canal-dot{width:12px;height:12px;border-radius:3px;background:var(--canal-c);flex-shrink:0}
+.canal-name{display:flex;flex-direction:column;gap:5px;min-width:0}
+.canal-name-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.canal-name b{font-family:var(--medium);font-weight:500;font-size:14.5px;color:var(--text);letter-spacing:-0.01em}
+.canal-bar{height:6px;background:var(--surface-soft);border-radius:3px;overflow:hidden;position:relative;border:1px solid var(--border-soft)}
+.canal-bar span{display:block;height:100%;width:0;background:var(--canal-c);border-radius:3px;transition:width 1.2s cubic-bezier(.2,0,.2,1)}
+.canal-bar.show span{width:var(--canal-w)}
+.canal-vals{text-align:right;display:flex;flex-direction:column;gap:2px}
+.canal-vals b{font-family:var(--serif);font-weight:500;font-size:17px;color:var(--text);letter-spacing:-0.02em;font-variant-numeric:tabular-nums;line-height:1}
+.canal-vals small{font-family:var(--mono);font-size:11px;color:var(--muted);font-weight:600}
+.canal-row.total{background:var(--surface-soft);padding:14px 16px;border-radius:var(--r-sm);border:none;margin-top:8px}
+.canal-row.total .canal-vals b{color:var(--accent)}
+@media(max-width:760px){.canal-row{grid-template-columns:12px 1fr 80px;gap:10px}}
+
+/* ───── PLAN TABLE (consolidado) ───── */
+.plan-table{background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);margin-top:24px}
+.plan-table table{width:100%;border-collapse:collapse}
+.plan-table th{text-align:left;padding:14px 16px;font-size:9.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);background:var(--surface-soft);border-bottom:1px solid var(--border-soft);white-space:nowrap}
+.plan-table td{padding:14px 16px;font-size:13px;border-bottom:1px solid var(--border-soft);vertical-align:middle}
+.plan-table tr:last-child td{border-bottom:none}
+.plan-table tr:hover td{background:var(--pk-bege-soft)}
+.plan-table td.num{font-family:var(--mono);font-size:12.5px;font-variant-numeric:tabular-nums;color:var(--text-soft);white-space:nowrap}
+.plan-table td.num.meta{color:var(--accent);font-weight:600}
+.plan-table td b{color:var(--text);font-weight:600}
+.plan-table tfoot td{background:var(--text);color:var(--bg);font-weight:600;border-top:2px solid var(--accent);padding:18px 16px;border-bottom:none}
+.plan-table tfoot td.num{color:var(--accent);font-family:var(--serif);font-size:15px;font-weight:500;letter-spacing:-0.01em}
+.plan-table tfoot tr:hover td{background:var(--text)}
+.plan-table-wrap{overflow-x:auto}
+
+/* ───── BACK TO TOP ───── */
+.back-top{display:inline-flex;align-items:center;gap:8px;color:var(--muted);text-decoration:none;font-size:12px;font-weight:600;letter-spacing:.05em;padding:10px 18px;border-radius:999px;border:1px solid var(--border-strong);transition:all .2s;background:var(--surface)}
+.back-top:hover{color:var(--accent);border-color:var(--accent);transform:translateY(-2px)}
+
+/* ───── FOOTER ───── */
+.foot{background:var(--bg-dark);color:rgba(233,232,228,.7);padding:64px 0 32px;text-align:center}
+.foot-mark{display:inline-flex;align-items:center;gap:14px;margin-bottom:24px}
+.foot-mark-icon{width:48px;height:48px;display:flex;align-items:center;justify-content:center}
+.foot-mark-icon img{width:100%;height:100%;object-fit:contain}
+.foot-mark-text{text-align:left;font-family:var(--serif);font-weight:500;font-size:18px;color:var(--bg);letter-spacing:-0.02em}
+.foot-mark-text small{display:block;font-family:var(--sans);font-size:11px;font-weight:500;color:rgba(233,232,228,.5);letter-spacing:.05em;margin-top:2px;font-style:normal}
+.foot-meta{font-size:12px;color:rgba(233,232,228,.5);letter-spacing:.05em;margin-top:14px}
+.foot-meta b{color:var(--copper);font-weight:500}
+
+/* ───── PRINT ───── */
+@media print{
+  body{background:#fff;color:#000}
+  .nav,.mini-funnel,.nav-cta,.back-top{display:none!important}
+  section{padding:32px 0;page-break-inside:avoid}
+  .hero{min-height:auto;padding:0}
+  .funnel-row{break-inside:avoid;box-shadow:none!important}
+  .card,.public-card,.tl-card,.month-card,.creative-card,.insight,.check-item{box-shadow:none!important;border:1px solid #ddd!important;break-inside:avoid;background:#fff!important}
+  .foot{background:#fff;color:#666}
+  section.dark{background:#fff!important;color:#000!important}
+  section.dark .metrics-table{background:#fff!important}
+  section.dark .metrics-table td,section.dark .metrics-table th{color:#000!important;background:#fff!important}
+}
+
+::selection{background:var(--accent);color:#fff}
+</style>
+</head>
+<body>
+
+<!-- ════════ NAV ════════ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand" style="text-decoration:none">
+      <div class="nav-mark"><img src="https://static.wixstatic.com/media/9e0e31_d413da8154a84961a8c3ead79baf3c3e~mv2.png/v1/fill/w_192,h_192,lg_1,usm_0.66_1.00_0.01/9e0e31_d413da8154a84961a8c3ead79baf3c3e~mv2.png" alt="Trilha · símbolo"/></div>
+      <div class="nav-brand-text">
+        <small>TRILHA · PERFORMANCE DIGITAL</small>
+        <b>Porto Kaetê Hotel</b>
+      </div>
+    </a>
+    <button class="nav-cta" onclick="window.print()">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+      Exportar
+    </button>
+  </div>
+</nav>
+
+<!-- ════════ MINI FUNNEL (side nav) ════════ -->
+<div class="mini-funnel" id="miniFunnel">
+  <a href="#topo-funil" data-target="topo-funil" data-name="i · Topo (Instagram)"></a>
+  <a href="#whatsapp" data-target="whatsapp" data-name="ii · WhatsApp (Fundo)"></a>
+  <a href="#site" data-target="site" data-name="iii · Site (Fundo)"></a>
+  <a href="#sazonal" data-target="sazonal" data-name="iv · Sazonal (Tática)"></a>
+</div>
+
+<!-- ════════ HERO · FUNIL DAS CAMPANHAS ════════ -->
+<section class="hero" id="top">
+  <div class="container">
+    <div class="hero-intro">
+      <div class="eyebrow">Plano de Mídia · Jun–Ago 2026</div>
+      <h1 class="hero-title">O caminho até a reserva<br/>em <em>cinco campanhas.</em></h1>
+      <p class="lede">Do reconhecimento de marca à conversão em reserva. Cada camada do funil integra marketing e vendas pra transformar demanda em ocupação.</p>
+    </div>
+
+    <div class="funnel">
+      <a href="#topo-funil" class="funnel-row f1">
+        <div class="f-left"><div class="f-roman">i</div></div>
+        <div class="f-center">
+          <div class="f-tag">Topo · Marca</div>
+          <div class="f-name">Instagram · Awareness</div>
+          <div class="f-sub">Tráfego ao perfil · alimenta remarketing das demais</div>
+        </div>
+        <div class="f-right">
+          <div class="f-stat">Verba<b>R$ 600</b></div>
+          <div class="f-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+        </div>
+      </a>
+
+      <a href="#whatsapp" class="funnel-row f2">
+        <div class="f-left"><div class="f-roman">ii</div></div>
+        <div class="f-center">
+          <div class="f-tag">Fundo · Venda</div>
+          <div class="f-name">WhatsApp Lead</div>
+          <div class="f-sub">Mensagens (CTWA) · 3 janelas temporais · Kaé &amp; Tete</div>
+        </div>
+        <div class="f-right">
+          <div class="f-stat">Verba<b>R$ 2.500</b></div>
+          <div class="f-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+        </div>
+      </a>
+
+      <a href="#site" class="funnel-row f3">
+        <div class="f-left"><div class="f-roman">iii</div></div>
+        <div class="f-center">
+          <div class="f-tag">Fundo · Venda</div>
+          <div class="f-name">Site / Vendas Ongoing</div>
+          <div class="f-sub">Conversão direta no motor Ominibess · remarketing + lookalike</div>
+        </div>
+        <div class="f-right">
+          <div class="f-stat">Verba<b>R$ 2.000</b></div>
+          <div class="f-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+        </div>
+      </a>
+
+      <a href="#sazonal" class="funnel-row f4">
+        <div class="f-left"><div class="f-roman">iv</div></div>
+        <div class="f-center">
+          <div class="f-name">Sazonal</div>
+          <div class="f-sub">Dia dos Namorados</div>
+        </div>
+        <div class="f-right">
+          <div class="f-stat">Verba<b>R$ 900</b></div>
+          <div class="f-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+        </div>
+      </a>
+    </div>
+
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <small>Verba mensal</small>
+        <div class="v">R$ <em>7.000</em></div>
+        <p>Distribuída entre canais: Google + Meta Ads</p>
+      </div>
+      <div class="hero-meta-item">
+        <small>Objetivo</small>
+        <p>Reverter a tendência de queda na ocupação da baixa temporada.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ DIVISÃO POR PLATAFORMA ════════ -->
+<section id="plataformas" class="pk-warm tight">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow pk">Divisão por plataforma</div>
+      <h2 class="section-title">Dois canais,<br/><em class="pk">uma estratégia.</em></h2>
+      <p class="lede" style="margin-top:24px">
+        A verba mensal se distribui entre Meta Ads e Google Ads, cada plataforma com um papel diferente no funil. Meta domina porque viabiliza ganho de visibilidade e alcance massivo. Google entra na frente de alta intenção, capturando quem já busca ativamente.
+      </p>
+    </div>
+
+    <!-- SPLIT BAR -->
+    <div class="reveal" style="margin-bottom:56px">
+      <div class="card-eyebrow">Divisão proporcional</div>
+      <h3 class="card-title" style="font-size:22px;margin-top:6px;margin-bottom:18px">R$ 7.000 entre 2 plataformas</h3>
+
+      <div class="split-bar">
+        <div class="split-seg meta" style="--w:71%">
+          <div class="split-name">Meta Ads <span class="split-pct">71%</span></div>
+          <div class="split-val">R$ 5.000/mês · 4 campanhas integradas</div>
+        </div>
+        <div class="split-seg google" style="--w:29%">
+          <div class="split-name">Google Ads <span class="split-pct">29%</span></div>
+          <div class="split-val">R$ 2.000/mês · 2 campanhas de intenção</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-12 reveal">
+
+      <!-- META ADS CARD -->
+      <div class="g-6 public-card">
+        <div class="pc-banner" style="background:linear-gradient(135deg, var(--accent-soft) 0%,#FFD9C2 100%)">
+          <div class="pc-banner-text">
+            <div class="pc-banner-eyebrow">Plataforma 1 · Maior fatia</div>
+            <div class="pc-banner-title">Meta Ads</div>
+          </div>
+          <div class="pc-banner-bdg"><span class="bdg bdg-orange">R$ 5.000 · 71%</span></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-products"><b>4 campanhas</b> · cobre topo, fundo e sazonalidade</div>
+          <div>
+            <div class="pc-block-h">Onde investe</div>
+            <ul class="dash-list accent">
+              <li><b>WhatsApp Lead</b>, CTWA + chatbot Kaé/Tete</li>
+              <li><b>Site / Vendas Ongoing</b>, conversão no Ominibess</li>
+              <li><b>Instagram · Awareness</b>, alimentar audiência aquecida</li>
+              <li><b>Sazonal</b>, Dia dos Namorados + baixa temp.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- GOOGLE ADS CARD -->
+      <div class="g-6 public-card">
+        <div class="pc-banner" style="background:linear-gradient(135deg, var(--pk-bege-soft) 0%, var(--pk-bege) 100%)">
+          <div class="pc-banner-text">
+            <div class="pc-banner-eyebrow">Plataforma 2 · Alta intenção</div>
+            <div class="pc-banner-title">Google Ads</div>
+          </div>
+          <div class="pc-banner-bdg"><span class="bdg bdg-pk">R$ 2.000 · 29%</span></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-products"><b>2 campanhas</b> · captação de quem já busca ativamente</div>
+          <div>
+            <div class="pc-block-h">Onde investe</div>
+            <ul class="dash-list pk">
+              <li><b>Search Brand</b>, quem busca "Porto Kaetê" e variações</li>
+              <li><b>Performance Max</b>, palavras de alta intenção (ex: "hotel maceió", "hotel 4 estrelas maceió")</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════ PÚBLICOS-ALVO ════════ -->
+<section id="publicos" class="tight">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow muted">Públicos-alvo</div>
+      <h2 class="section-title">Três <em>frentes.</em></h2>
+      <p class="lede" style="margin-top:24px">
+        O corporativo quer produtividade, o casal quer desligar do mundo, o argentino quer fugir do inverno. Três desejos, três campanhas.
+      </p>
+    </div>
+
+    <div class="grid-12 reveal">
+
+      <div class="g-4 public-card">
+        <div class="pc-banner corp">
+          <div class="pc-banner-text">
+            <div class="pc-banner-eyebrow">Frente 1 · 60-70%</div>
+            <div class="pc-banner-title">Corporativo</div>
+          </div>
+          <div class="pc-banner-bdg"><span class="bdg bdg-orange">Maior frente</span></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-products"><b>Decisores</b> · 35-60 anos · viagem a trabalho</div>
+          <div>
+            <div class="pc-block-h">Diferenciais que vendem</div>
+            <ul class="dash-list accent">
+              <li>Sala de reunião privativa no hotel</li>
+              <li>Wi-fi forte e estável em todos os quartos</li>
+              <li>Café da manhã reforçado + gastronomia local</li>
+              <li>A passos da praia e dos melhores restaurantes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="g-4 public-card">
+        <div class="pc-banner ar">
+          <div class="pc-banner-text">
+            <div class="pc-banner-eyebrow">Frente 2 · Internacional</div>
+            <div class="pc-banner-title">Argentinos</div>
+          </div>
+          <div class="pc-banner-bdg"><span class="bdg bdg-green">Anti-sazonal</span></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-products"><b>35-60 años</b> · su temporada alta es nuestra baja</div>
+          <div>
+            <div class="pc-block-h">Diferenciales que venden</div>
+            <ul class="dash-list accent">
+              <li>Escapá del invierno argentino</li>
+              <li>Nordeste brasileño · clima cálido en julio y agosto</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="g-4 public-card">
+        <div class="pc-banner casais">
+          <div class="pc-banner-text">
+            <div class="pc-banner-eyebrow">Frente 3 · Lazer</div>
+            <div class="pc-banner-title">Casais</div>
+          </div>
+          <div class="pc-banner-bdg"><span class="bdg bdg-pk">Experiência</span></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-products"><b>Viagem de lazer</b> · 28-55 anos · ciclo médio de decisão</div>
+          <div>
+            <div class="pc-block-h">Diferenciais que vendem</div>
+            <ul class="dash-list pk">
+              <li>Experiências sob medida</li>
+              <li>Hospitalidade de quem atende com brilho no olho</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- TIER ANALYSIS · PRAÇAS DE CAPTAÇÃO -->
+    <div class="reveal" style="margin-top:56px">
+      <div class="card-eyebrow">Praças de captação · análise geográfica</div>
+      <h3 class="card-title" style="font-size:24px;margin-top:6px;margin-bottom:16px">Por onde vêm os hóspedes</h3>
+      <p style="font-size:14px;color:var(--text-soft);max-width:720px;margin-bottom:24px;line-height:1.6">
+        Segmentação geográfica em 3 tiers domésticos + 1 janela internacional sazonal. Cada tier tem um perfil diferente de ticket, antecedência e duração de estadia.
+      </p>
+
+      <div class="tier-grid">
+
+        <div class="tier-card tier-1">
+          <div class="tier-num">01</div>
+          <div class="tier-body">
+            <div class="tier-h">
+              <div class="tier-label">Praças prioritárias</div>
+              <span class="bdg bdg-orange">Foco principal</span>
+            </div>
+            <div class="tier-cities">São Paulo · Rio de Janeiro · Belo Horizonte · Brasília</div>
+            <p class="tier-desc">
+              Maior volume de voos diretos e o público de <b>férias longas (5-7 noites)</b>, maior ticket de diária e planejamento antecipado. Voo de SP em ~3h05, do Rio em ~2h45, de Brasília em ~2h25. <b>Núcleo da verba o ano todo.</b>
+            </p>
+          </div>
+        </div>
+
+        <div class="tier-card tier-2">
+          <div class="tier-num">02</div>
+          <div class="tier-body">
+            <div class="tier-h">
+              <div class="tier-label">Praças regionais</div>
+              <span class="bdg bdg-pk">Escapada e feriado</span>
+            </div>
+            <div class="tier-cities">Recife · Salvador · João Pessoa · Natal</div>
+            <p class="tier-desc">
+              Mercado de <b>estadia curta (2-3 noites)</b>, decisão rápida e hóspede recorrente. Recife a ~50min e Salvador a ~1h de voo. Público quente pra ofertas de feriado, meio de semana e <b>last-minute</b>.
+            </p>
+          </div>
+        </div>
+
+        <div class="tier-card tier-3">
+          <div class="tier-num">03</div>
+          <div class="tier-body">
+            <div class="tier-h">
+              <div class="tier-label">Praças de teste</div>
+              <span class="bdg bdg-copper">Expansão qualificada</span>
+            </div>
+            <div class="tier-cities">Goiânia · Uberlândia · Ribeirão Preto · São José do Rio Preto</div>
+            <p class="tier-desc">
+              Interior de alta renda (eixo <b>agro/Centro-Oeste</b>) com pouca concorrência de leilão. Teste de público de padrão fora do óbvio.
+            </p>
+          </div>
+        </div>
+
+        <div class="tier-card tier-int">
+          <div class="tier-num">04</div>
+          <div class="tier-body">
+            <div class="tier-h">
+              <div class="tier-label">Janela internacional</div>
+              <span class="bdg bdg-info">Sazonal · verão</span>
+            </div>
+            <div class="tier-cities">Buenos Aires</div>
+            <p class="tier-desc">
+              Gol opera o ano todo e a Flybondi entra na temporada de <b>dezembro a fevereiro</b>. Hóspede argentino clássico de verão. <b>Ativar só na alta.</b>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════ TOPO DO FUNIL · INSTAGRAM AWARENESS ════════ -->
+<section id="topo-funil" class="warm">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-marker"><span class="roman">i</span> · Topo do funil · alcance</div>
+      <h2 class="section-title">Onde a marca<br/><em>encontra audiência.</em></h2>
+      <p class="lede" style="margin-top:24px">
+        A camada de alcance amplo. R$ 600/mês turbinando reels e posts orgânicos, com foco amplo (30-65 anos) pra alimentar a audiência aquecida que vai ser reaproveitada pelas campanhas de fundo via remarketing.
+      </p>
+    </div>
+
+    <div class="reveal">
+      <div class="card" style="padding:40px 36px">
+        <div class="grid-12" style="gap:32px;align-items:start">
+
+          <div class="g-4">
+            <div class="card-eyebrow">Verba mensal</div>
+            <div style="font-family:var(--serif);font-weight:500;font-size:48px;color:var(--accent);letter-spacing:-0.03em;line-height:1;margin-top:10px">R$ 600</div>
+            <div style="font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:8px;font-weight:500">9% do total</div>
+          </div>
+
+          <div class="g-4">
+            <div class="card-eyebrow">KPI principal</div>
+            <ul class="dash-list accent" style="margin-top:14px">
+              <li>Visitas ao perfil</li>
+              <li>Custo por visita</li>
+            </ul>
+          </div>
+
+          <div class="g-4">
+            <div class="card-eyebrow">Metas secundárias</div>
+            <ul class="dash-list" style="margin-top:14px">
+              <li>Novos seguidores</li>
+              <li>Compartilhamentos</li>
+              <li>Salvamentos</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ MOODBOARD ════════ -->
+<section id="moodboard">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow muted">Moodboard · briefing visual</div>
+      <p class="lede" style="margin-top:20px">
+        Banco de imagens necessário pra alimentar as campanhas.
+      </p>
+    </div>
+
+    <div class="reveal">
+      <div class="mb-grid">
+
+        <div class="mb-item feature">
+          <div class="mb-img" style="background-image:url('imagens/ref-01.jpeg')"></div>
+        </div>
+
+        <div class="mb-item">
+          <div class="mb-img" style="background-image:url('imagens/ref-02.jpeg')"></div>
+        </div>
+
+        <div class="mb-item">
+          <div class="mb-img" style="background-image:url('imagens/ref-03.jpeg')"></div>
+        </div>
+
+        <div class="mb-item">
+          <div class="mb-img" style="background-image:url('imagens/ref-04.jpeg')"></div>
+        </div>
+
+        <div class="mb-item">
+          <div class="mb-img" style="background-image:url('imagens/ref-05.jpeg')"></div>
+        </div>
+
+        <div class="mb-item wide">
+          <div class="mb-img" style="background-image:url('imagens/ref-06.jpeg')"></div>
+        </div>
+
+        <div class="mb-item">
+          <div class="mb-img" style="background-image:url('imagens/ref-07.jpeg')"></div>
+        </div>
+
+        <div class="mb-item">
+          <div class="mb-img" style="background-image:url('imagens/ref-08.jpeg')"></div>
+        </div>
+
+        <div class="mb-item">
+          <div class="mb-img" style="background-image:url('imagens/ref-09.jpeg')"></div>
+        </div>
+
+        <div class="mb-item">
+          <div class="mb-img" style="background-image:url('imagens/ref-10.jpeg')"></div>
+        </div>
+
+        <div class="mb-item">
+          <div class="mb-img" style="background-image:url('imagens/ref-11.jpeg')"></div>
+        </div>
+
+        <div class="mb-item">
+          <div class="mb-img" style="background-image:url('imagens/ref-12.jpeg')"></div>
+        </div>
+
+        <div class="mb-item">
+          <div class="mb-img" style="background-image:url('imagens/ref-13.jpeg')"></div>
+        </div>
+
+        <div class="mb-item">
+          <div class="mb-img" style="background-image:url('imagens/ref-14.jpeg')"></div>
+        </div>
+
+        <div class="mb-item">
+          <div class="mb-img" style="background-image:url('imagens/ref-15.jpeg')"></div>
+        </div>
+
+        <div class="mb-item">
+          <div class="mb-img" style="background-image:url('imagens/ref-16.jpeg')"></div>
+        </div>
+
+        <div class="mb-item">
+          <div class="mb-img" style="background-image:url('imagens/ref-17.jpeg')"></div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════ ii · WHATSAPP LEAD · ANTECIPAÇÃO ════════ -->
+<section id="whatsapp">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-marker"><span class="roman">ii</span> · WhatsApp Lead · CTWA</div>
+      <h2 class="section-title">Antecipação,<br/><em>prioridade na baixa.</em></h2>
+    </div>
+
+    <div class="month-grid reveal" style="margin-top:0">
+      <div class="month-card m0">
+        <div class="month-eyebrow">Campanha 1</div>
+        <div class="month-name"><em>junho</em></div>
+        <div class="month-value">R$ 900</div>
+        <div class="month-pct">36% da verba WhatsApp</div>
+      </div>
+      <div class="month-card m1">
+        <div class="month-eyebrow">Campanha 2</div>
+        <div class="month-name"><em>julho</em></div>
+        <div class="month-value">R$ 800</div>
+        <div class="month-pct">32% da verba WhatsApp</div>
+      </div>
+      <div class="month-card m2">
+        <div class="month-eyebrow">Campanha 3</div>
+        <div class="month-name"><em>agosto</em></div>
+        <div class="month-value">R$ 800</div>
+        <div class="month-pct">32% da verba WhatsApp</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ iii · SITE · VENDAS ONGOING ════════ -->
+<section id="site" class="warm">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-marker"><span class="roman">iii</span> · Site · Vendas Ongoing</div>
+      <h2 class="section-title">Quem já decidiu<br/><em>compra aqui.</em></h2>
+      <p class="lede" style="margin-top:24px">
+        R$ 2.000/mês otimizando o evento "Reserva Concluída" no Omnibees, em Meta + Google. Não captamos lead, capturamos quem está pronto pra fechar, e fechamos direto, sem pagar 15-25% de comissão pra OTA.
+      </p>
+    </div>
+
+    <div class="grid-12 reveal">
+
+      <!-- META ADS CARD -->
+      <div class="g-6 public-card">
+        <div class="pc-banner" style="background:linear-gradient(135deg,var(--accent-soft) 0%,#FFD9C2 100%)">
+          <div class="pc-banner-text">
+            <div class="pc-banner-eyebrow">Meta Ads</div>
+            <div class="pc-banner-title">Quem já te conhece</div>
+          </div>
+          <div class="pc-banner-bdg"><span class="bdg bdg-orange">R$ 1.000 · 50%</span></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-block-h">Estratégia</div>
+          <ul class="dash-list accent">
+            <li><b>Remarketing (quente):</b> visitantes do site 7/30/90 dias · engajamento IG/FB 90 dias · carrinho abandonado no Omnibees</li>
+            <li><b>Lookalike:</b> similar a quem já reservou</li>
+            <li><b>Otimização:</b> evento "Reserva Concluída"</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- GOOGLE ADS CARD -->
+      <div class="g-6 public-card">
+        <div class="pc-banner" style="background:linear-gradient(135deg,var(--pk-bege-soft) 0%,var(--pk-bege) 100%)">
+          <div class="pc-banner-text">
+            <div class="pc-banner-eyebrow">Google Ads</div>
+            <div class="pc-banner-title">Quem está procurando agora</div>
+          </div>
+          <div class="pc-banner-bdg"><span class="bdg bdg-pk">R$ 1.000 · 50%</span></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-block-h">Estratégia</div>
+          <ul class="dash-list pk">
+            <li><b>Pesquisa de alta intenção:</b> defesa de marca (intercepta quem busca o nome do hotel antes da OTA pegar) · "hotel/pousada em Maceió" · termos de reserva</li>
+            <li><b>Remarketing (RLSA/Display)</b> com o mesmo evento de conversão</li>
+            <li>É aqui que você ganha a reserva no <b>momento exato da decisão</b></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Régua de performance -->
+    <div class="reveal" style="margin-top:32px">
+      <div class="card" style="padding:32px 30px">
+        <div class="card-eyebrow">Régua de performance</div>
+        <div class="card-title" style="font-size:18px;margin-top:4px">Benchmark Trilha · mercado, reverificado maio/2026</div>
+        <ul class="dash-list accent" style="margin-top:18px">
+          <li><b>ROAS</b> ≥ 5x · custo por reserva &lt; 10-15% do valor, e abaixo da comissão de OTA</li>
+          <li><b>Meta:</b> CTR ≥ 1% · CPC ≤ R$ 1,50 · frequência &lt; 2,5</li>
+          <li><b>Google:</b> conversão ≥ 5% · Impression Share &gt; 60% · Índice de Qualidade ≥ 6</li>
+          <li><b>Site converte</b> 0,2-4%, acima de 2% já é top 20%</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════ ETAPA v · SAZONAL / PROMOCIONAL ════════ -->
+<section id="sazonal">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-marker"><span class="roman">v</span> · Sazonal · Promocional</div>
+      <h2 class="section-title">R$ 900 com<br/><em>gatilho na hora certa.</em></h2>
+      <p class="lede" style="margin-top:24px">
+        Duas sub-ativações com flexibilidade pra realocar entre elas conforme demanda. Dia dos Namorados concentra o pico em maio-junho;
+        ofertas de baixa temporada espalham-se entre junho-agosto.
+      </p>
+    </div>
+
+    <div class="grid-12 reveal">
+
+      <!-- 5.1 DIA DOS NAMORADOS -->
+      <div class="g-6 card" style="border-top:4px solid var(--accent)">
+        <div class="card-hd">
+          <div>
+            <div class="card-eyebrow" style="color:var(--accent)">Sub-ativação 5.1</div>
+            <div class="card-title">Dia dos Namorados · 12/06</div>
+          </div>
+          <div style="font-family:var(--serif);font-weight:500;font-size:32px;color:var(--accent);letter-spacing:-0.03em;font-variant-numeric:tabular-nums">R$ 500</div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:14px;margin-top:8px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;padding-bottom:12px;border-bottom:1px solid var(--border-soft)">
+            <span style="font-size:12px;color:var(--muted);font-weight:600;letter-spacing:.1em;text-transform:uppercase">Janela</span>
+            <span style="font-family:var(--medium);font-size:14px;color:var(--text)">20/05 a 11/06</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;padding-bottom:12px;border-bottom:1px solid var(--border-soft)">
+            <span style="font-size:12px;color:var(--muted);font-weight:600;letter-spacing:.1em;text-transform:uppercase">Objetivo</span>
+            <span style="font-family:var(--medium);font-size:14px;color:var(--text)">Vendas + Mensagens</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;padding-bottom:12px;border-bottom:1px solid var(--border-soft)">
+            <span style="font-size:12px;color:var(--muted);font-weight:600;letter-spacing:.1em;text-transform:uppercase">Localização</span>
+            <span style="font-family:var(--medium);font-size:14px;color:var(--text);text-align:right">Maceió · Recife<br/>Salvador · Aracaju</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline">
+            <span style="font-size:12px;color:var(--muted);font-weight:600;letter-spacing:.1em;text-transform:uppercase">Público</span>
+            <span style="font-family:var(--medium);font-size:14px;color:var(--text);text-align:right">Casais 28-55<br/>"Em um relacionamento"</span>
+          </div>
+        </div>
+
+        <div style="background:var(--accent-soft);border-radius:var(--r-sm);padding:16px 18px;margin-top:14px">
+          <div class="pc-block-h" style="color:var(--accent-dark);margin-bottom:8px">Oferta</div>
+          <p style="font-size:13.5px;color:var(--accent-dark);line-height:1.6">
+            Jantar romântico aberto ao público local + <b>Pacote romântico de hospedagem</b> com espumante, bolo e pétalas para entrada em 12/05 ou 13/05.
+          </p>
+        </div>
+
+        <div style="margin-top:6px">
+          <div class="pc-block-h" style="margin-bottom:8px">Criativo</div>
+          <p style="font-size:13px;color:var(--text-soft);line-height:1.55;font-style:italic">
+            Foto do casal na Oca Kaetê com espumante. Copy: "Uma noite que não se esquece."
+          </p>
+        </div>
+      </div>
+
+      <!-- 5.2 BAIXA TEMPORADA -->
+      <div class="g-6 card" style="border-top:4px solid var(--pk-brown)">
+        <div class="card-hd">
+          <div>
+            <div class="card-eyebrow" style="color:var(--pk-brown)">Sub-ativação 5.2</div>
+            <div class="card-title">Baixa Temporada · jun–ago</div>
+          </div>
+          <div style="font-family:var(--serif);font-weight:500;font-size:32px;color:var(--pk-brown);letter-spacing:-0.03em;font-variant-numeric:tabular-nums">R$ 400</div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:14px;margin-top:8px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;padding-bottom:12px;border-bottom:1px solid var(--border-soft)">
+            <span style="font-size:12px;color:var(--muted);font-weight:600;letter-spacing:.1em;text-transform:uppercase">Janela</span>
+            <span style="font-family:var(--medium);font-size:14px;color:var(--text)">junho a agosto<br/>(picos em jun e ago)</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;padding-bottom:12px;border-bottom:1px solid var(--border-soft)">
+            <span style="font-size:12px;color:var(--muted);font-weight:600;letter-spacing:.1em;text-transform:uppercase">Flexibilidade</span>
+            <span style="font-family:var(--medium);font-size:14px;color:var(--text);text-align:right">Soma o que sobrar<br/>das outras campanhas</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;padding-bottom:12px;border-bottom:1px solid var(--border-soft)">
+            <span style="font-size:12px;color:var(--muted);font-weight:600;letter-spacing:.1em;text-transform:uppercase">Objetivo</span>
+            <span style="font-family:var(--medium);font-size:14px;color:var(--text)">Vendas + Mensagens</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline">
+            <span style="font-size:12px;color:var(--muted);font-weight:600;letter-spacing:.1em;text-transform:uppercase">Público</span>
+            <span style="font-family:var(--medium);font-size:14px;color:var(--text);text-align:right">Corporativo + casais<br/>com tempo livre</span>
+          </div>
+        </div>
+
+        <div style="background:var(--pk-bege-soft);border-radius:var(--r-sm);padding:16px 18px;margin-top:14px">
+          <div class="pc-block-h" style="color:var(--pk-brown);margin-bottom:8px">Oferta · escolher uma</div>
+          <ul class="dash-list pk" style="font-size:13.5px">
+            <li>Desconto na 3ª/4ª diária</li>
+            <li>Upgrade gratuito de categoria</li>
+            <li>Café da manhã estendido</li>
+          </ul>
+        </div>
+
+        <div style="margin-top:6px">
+          <div class="pc-block-h" style="margin-bottom:8px">Criativo</div>
+          <p style="font-size:13px;color:var(--text-soft);line-height:1.55;font-style:italic">
+            Foto da piscina vazia + quarto. Copy: "A baixa temporada que não parece baixa."
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════ MÉTRICAS & PRÉ-REQUISITOS ════════ -->
+<section id="metricas" class="dark">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-marker" style="color:rgba(233,232,228,.6)"><span class="roman" style="color:var(--accent)">vi</span> · Métricas · KPIs</div>
+      <h2 class="section-title">O que vamos medir<br/><em>toda semana.</em></h2>
+      <p class="lede" style="margin-top:24px">
+        Cada campanha tem KPI principal + secundário. Projeção total: <b style="color:var(--accent)">23 a 37 reservas/mês via mídia paga</b> (Meta + Google).
+        Reuniões de checkpoint às quintas-feiras; primeira otimização baseada em dados em 10/06 (após 10 dias de fase de aprendizado).
+      </p>
+    </div>
+
+    <div class="reveal">
+      <div class="metrics-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Campanha</th>
+              <th>KPI Principal</th>
+              <th>Meta</th>
+              <th>KPI Secundário</th>
+              <th>Meta secundária</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="bdg bdg-orange">i</span> WhatsApp Lead</td>
+              <td style="color:rgba(233,232,228,.85)">Quantitativo de leads, CPL</td>
+              <td class="num meta">R$ 20-25</td>
+              <td class="num">Taxa conv. lead→reserva</td>
+              <td class="num meta">5-8%</td>
+            </tr>
+            <tr>
+              <td><span class="bdg bdg-amber">ii</span> Site / Vendas</td>
+              <td style="color:rgba(233,232,228,.85)">Compras, ROAS</td>
+              <td class="num meta">10-15x</td>
+              <td class="num">Taxa conv. site</td>
+              <td class="num meta">1-2%</td>
+            </tr>
+            <tr>
+              <td><span class="bdg bdg-info">iv</span> Instagram Tráfego</td>
+              <td style="color:rgba(233,232,228,.85)">Visitas ao perfil, Custo por Visita</td>
+              <td class="num meta">R$ 0,30-0,80</td>
+              <td class="num">Engajamento perfil</td>
+              <td class="num meta">+5% mês</td>
+            </tr>
+            <tr>
+              <td><span class="bdg bdg-copper">v</span> Sazonal</td>
+              <td style="color:rgba(233,232,228,.85)">ROAS / CPL</td>
+              <td class="num meta">Variável</td>
+              <td class="num">Reservas no período</td>
+              <td class="num meta">Variável</td>
+            </tr>
+            <tr>
+              <td><span class="bdg bdg-info">vi</span> Google Perf. Max</td>
+              <td style="color:rgba(233,232,228,.85)">ROAS / CPA</td>
+              <td class="num meta">8-12x · R$ 150-250</td>
+              <td class="num">Reservas via PMax</td>
+              <td class="num meta">6-9/mês</td>
+            </tr>
+            <tr>
+              <td><span class="bdg bdg-info">vii</span> Google Search Brand</td>
+              <td style="color:rgba(233,232,228,.85)">CPC / CTR</td>
+              <td class="num meta">R$ 0,50-1,50</td>
+              <td class="num">Reservas via Search</td>
+              <td class="num meta">3-5/mês</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="reveal" style="margin-top:64px">
+      <div class="grid-12">
+        <div class="g-6">
+          <div class="card-eyebrow" style="color:rgba(233,232,228,.5)">Métricas gerais · semanal</div>
+          <h3 style="font-family:var(--serif);font-weight:500;font-size:24px;color:var(--bg);letter-spacing:-0.02em;margin-top:8px">O que olhamos toda quinta</h3>
+          <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:14px;margin-top:24px">
+            <li style="font-size:14px;color:rgba(233,232,228,.85);line-height:1.55;display:flex;gap:14px;align-items:flex-start">
+              <span style="font-family:var(--italic);font-size:18px;color:var(--accent);min-width:30px">→</span>
+              <span><b style="color:var(--bg);font-weight:600">CTR</b> de cada criativo · alvo &gt; 1%</span>
+            </li>
+            <li style="font-size:14px;color:rgba(233,232,228,.85);line-height:1.55;display:flex;gap:14px;align-items:flex-start">
+              <span style="font-family:var(--italic);font-size:18px;color:var(--accent);min-width:30px">→</span>
+              <span><b style="color:var(--bg);font-weight:600">Frequência</b> por ad set · alvo &lt; 3,5 em 7 dias (renovar criativo se ultrapassar)</span>
+            </li>
+            <li style="font-size:14px;color:rgba(233,232,228,.85);line-height:1.55;display:flex;gap:14px;align-items:flex-start">
+              <span style="font-family:var(--italic);font-size:18px;color:var(--accent);min-width:30px">→</span>
+              <span><b style="color:var(--bg);font-weight:600">Taxa de preenchimento</b> de formulário/WhatsApp · alvo &gt; 15% do clique</span>
+            </li>
+            <li style="font-size:14px;color:rgba(233,232,228,.85);line-height:1.55;display:flex;gap:14px;align-items:flex-start">
+              <span style="font-family:var(--italic);font-size:18px;color:var(--accent);min-width:30px">→</span>
+              <span><b style="color:var(--bg);font-weight:600">Investimento gasto vs planejado</b> · realocar se uma campanha sub-utilizar</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="g-6">
+          <div class="card-eyebrow" style="color:rgba(233,232,228,.5)">Pré-requisitos técnicos</div>
+          <h3 style="font-family:var(--serif);font-weight:500;font-size:24px;color:var(--bg);letter-spacing:-0.02em;margin-top:8px">Checklist antes de subir</h3>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-top:24px">
+            <div style="display:flex;gap:12px;align-items:center;padding:12px 16px;background:rgba(255,255,255,.04);border-radius:var(--r-sm);border:1px solid rgba(233,232,228,.08)">
+              <div style="width:18px;height:18px;border:2px solid rgba(233,232,228,.3);border-radius:4px;flex-shrink:0"></div>
+              <span style="font-size:13.5px;color:rgba(233,232,228,.85);line-height:1.4">Pixel da Meta + Conversions API conectados</span>
+            </div>
+            <div style="display:flex;gap:12px;align-items:center;padding:12px 16px;background:rgba(255,255,255,.04);border-radius:var(--r-sm);border:1px solid rgba(233,232,228,.08)">
+              <div style="width:18px;height:18px;border:2px solid rgba(233,232,228,.3);border-radius:4px;flex-shrink:0"></div>
+              <span style="font-size:13.5px;color:rgba(233,232,228,.85);line-height:1.4">Evento "Purchase" disparado pelo Ominibess</span>
+            </div>
+            <div style="display:flex;gap:12px;align-items:center;padding:12px 16px;background:rgba(255,255,255,.04);border-radius:var(--r-sm);border:1px solid rgba(233,232,228,.08)">
+              <div style="width:18px;height:18px;border:2px solid rgba(233,232,228,.3);border-radius:4px;flex-shrink:0"></div>
+              <span style="font-size:13.5px;color:rgba(233,232,228,.85);line-height:1.4">Página do site com versão em espanhol</span>
+            </div>
+            <div style="display:flex;gap:12px;align-items:center;padding:12px 16px;background:rgba(255,255,255,.04);border-radius:var(--r-sm);border:1px solid rgba(233,232,228,.08)">
+              <div style="width:18px;height:18px;border:2px solid rgba(233,232,228,.3);border-radius:4px;flex-shrink:0"></div>
+              <span style="font-size:13.5px;color:rgba(233,232,228,.85);line-height:1.4">Evento "Reserva Concluída" mapeado no Desbravador</span>
+            </div>
+            <div style="display:flex;gap:12px;align-items:center;padding:12px 16px;background:rgba(255,255,255,.04);border-radius:var(--r-sm);border:1px solid rgba(233,232,228,.08)">
+              <div style="width:18px;height:18px;border:2px solid rgba(233,232,228,.3);border-radius:4px;flex-shrink:0"></div>
+              <span style="font-size:13.5px;color:rgba(233,232,228,.85);line-height:1.4">Fluxos: carrinho abandonado configurado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════ CONSOLIDADO ════════ -->
+<section id="resumo" class="warm">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow muted">Visão consolidada</div>
+      <h2 class="section-title">Tudo numa<br/><em class="pk">página só.</em></h2>
+      <p class="lede" style="margin-top:24px">
+        Divisão de verba, etapa do funil, objetivo Meta Ads, KPI principal e projeção de reservas, o plano inteiro em formato de relance.
+      </p>
+    </div>
+
+    <!-- DONUT + LISTA DE CANAIS -->
+    <div class="grid-12 reveal" style="align-items:stretch;margin-bottom:48px">
+
+      <div class="g-5 card" style="align-items:center">
+        <div style="align-self:stretch">
+          <div class="card-eyebrow">Divisão da verba</div>
+          <div class="card-title" style="font-size:22px;margin-top:4px">R$ 7.000 entre 7 campanhas</div>
+        </div>
+
+        <div class="donut-wrap">
+          <div class="donut">
+            <div class="donut-center">
+              <small>Total mensal</small>
+              <b>R$&nbsp;7k</b>
+              <div class="donut-meta">Meta + Google Ads</div>
+            </div>
+          </div>
+        </div>
+
+        <p style="font-size:12px;color:var(--muted);text-align:center;line-height:1.5;max-width:280px;margin-top:4px">
+          Meta concentra 71% (storytelling + retargeting); Google 29% (alta intenção e search).
+        </p>
+      </div>
+
+      <div class="g-7 card">
+        <div class="card-eyebrow">Por campanha · ordem de investimento</div>
+        <div class="card-title" style="font-size:22px;margin-top:4px;margin-bottom:8px">Hierarquia das 7 campanhas</div>
+
+        <div class="canal-list">
+
+          <div class="canal-row" style="--canal-c:var(--accent);--canal-w:36%">
+            <span class="canal-dot"></span>
+            <div class="canal-name">
+              <div class="canal-name-top">
+                <b>WhatsApp Lead</b>
+                <span class="bdg bdg-orange">Meta · Fundo</span>
+              </div>
+              <div class="canal-bar"><span></span></div>
+            </div>
+            <div class="canal-vals"><b>R$ 2.500</b><small>36%</small></div>
+          </div>
+
+          <div class="canal-row" style="--canal-c:var(--accent-dark);--canal-w:14%">
+            <span class="canal-dot"></span>
+            <div class="canal-name">
+              <div class="canal-name-top">
+                <b>Site · Meta Ads</b>
+                <span class="bdg bdg-orange">Meta · Fundo</span>
+              </div>
+              <div class="canal-bar"><span></span></div>
+            </div>
+            <div class="canal-vals"><b>R$ 1.000</b><small>14%</small></div>
+          </div>
+
+          <div class="canal-row" style="--canal-c:#b85a3f;--canal-w:14%">
+            <span class="canal-dot"></span>
+            <div class="canal-name">
+              <div class="canal-name-top">
+                <b>Site · Google Ads</b>
+                <span class="bdg bdg-info">Google · Fundo</span>
+              </div>
+              <div class="canal-bar"><span></span></div>
+            </div>
+            <div class="canal-vals"><b>R$ 1.000</b><small>14%</small></div>
+          </div>
+
+          <div class="canal-row" style="--canal-c:var(--copper);--canal-w:13%">
+            <span class="canal-dot"></span>
+            <div class="canal-name">
+              <div class="canal-name-top">
+                <b>Sazonal</b>
+                <span class="bdg bdg-copper">Meta · Tática</span>
+              </div>
+              <div class="canal-bar"><span></span></div>
+            </div>
+            <div class="canal-vals"><b>R$ 900</b><small>13%</small></div>
+          </div>
+
+          <div class="canal-row" style="--canal-c:var(--info);--canal-w:10%">
+            <span class="canal-dot"></span>
+            <div class="canal-name">
+              <div class="canal-name-top">
+                <b>Google Performance Max</b>
+                <span class="bdg bdg-info">Google · Fundo</span>
+              </div>
+              <div class="canal-bar"><span></span></div>
+            </div>
+            <div class="canal-vals"><b>R$ 700</b><small>10%</small></div>
+          </div>
+
+          <div class="canal-row" style="--canal-c:var(--pk-medium);--canal-w:9%">
+            <span class="canal-dot"></span>
+            <div class="canal-name">
+              <div class="canal-name-top">
+                <b>Instagram · Awareness</b>
+                <span class="bdg bdg-bege">Meta · Topo</span>
+              </div>
+              <div class="canal-bar"><span></span></div>
+            </div>
+            <div class="canal-vals"><b>R$ 600</b><small>9%</small></div>
+          </div>
+
+          <div class="canal-row" style="--canal-c:#4a7090;--canal-w:4%">
+            <span class="canal-dot"></span>
+            <div class="canal-name">
+              <div class="canal-name-top">
+                <b>Google Search Brand</b>
+                <span class="bdg bdg-info">Google · Fundo</span>
+              </div>
+              <div class="canal-bar"><span></span></div>
+            </div>
+            <div class="canal-vals"><b>R$ 300</b><small>4%</small></div>
+          </div>
+
+          <div class="canal-row total">
+            <span class="canal-dot" style="background:var(--accent)"></span>
+            <div class="canal-name">
+              <div class="canal-name-top">
+                <b style="font-size:15px">TOTAL</b>
+                <span class="bdg bdg-dark">Mensal</span>
+              </div>
+            </div>
+            <div class="canal-vals"><b style="font-size:20px">R$ 7.000</b><small>100%</small></div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- TABELA DETALHADA -->
+    <div class="reveal" style="margin-top:24px">
+      <div class="card-eyebrow">Tabela completa</div>
+      <h3 class="card-title" style="font-size:26px;margin-top:6px;margin-bottom:8px">Plano de mídia detalhado</h3>
+      <p style="font-size:13.5px;color:var(--text-soft);max-width:720px;margin-bottom:24px;line-height:1.55">
+        Visão de relance: cada campanha com seu papel no funil, objetivo no Meta Ads, verba, KPI principal e projeção de reservas/mês.
+      </p>
+
+      <div class="plan-table-wrap">
+        <div class="plan-table">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Campanha</th>
+                <th>Etapa</th>
+                <th>Objetivo Meta Ads</th>
+                <th>Verba</th>
+                <th>%</th>
+                <th>KPI Principal</th>
+                <th>Meta KPI</th>
+                <th>Projeção/mês</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="num">i</td>
+                <td><b>Instagram · Awareness</b></td>
+                <td><span class="bdg bdg-bege">Meta · Topo</span></td>
+                <td>Tráfego / Engajamento</td>
+                <td class="num"><b>R$ 600</b></td>
+                <td class="num">9%</td>
+                <td>CPC</td>
+                <td class="num meta">R$ 0,30–0,80</td>
+                <td>Audiência aquecida</td>
+              </tr>
+              <tr>
+                <td class="num">ii</td>
+                <td><b>WhatsApp Lead</b></td>
+                <td><span class="bdg bdg-orange">Meta · Fundo</span></td>
+                <td>Mensagens (CTWA)</td>
+                <td class="num"><b>R$ 2.500</b></td>
+                <td class="num">36%</td>
+                <td>CPL</td>
+                <td class="num meta">R$ 20–25</td>
+                <td>6–10 reservas</td>
+              </tr>
+              <tr>
+                <td class="num">iii</td>
+                <td><b>Site · Meta Ads</b></td>
+                <td><span class="bdg bdg-orange">Meta · Fundo</span></td>
+                <td>Vendas (Conversões)</td>
+                <td class="num"><b>R$ 1.000</b></td>
+                <td class="num">14%</td>
+                <td>ROAS</td>
+                <td class="num meta">≥ 5x</td>
+                <td>4–6 reservas</td>
+              </tr>
+              <tr>
+                <td class="num">iv</td>
+                <td><b>Site · Google Ads</b></td>
+                <td><span class="bdg bdg-info">Google · Fundo</span></td>
+                <td>Vendas (Search + RLSA)</td>
+                <td class="num"><b>R$ 1.000</b></td>
+                <td class="num">14%</td>
+                <td>ROAS</td>
+                <td class="num meta">≥ 5x</td>
+                <td>5–8 reservas</td>
+              </tr>
+              <tr>
+                <td class="num">v</td>
+                <td><b>Sazonal</b></td>
+                <td><span class="bdg bdg-copper">Meta · Tática</span></td>
+                <td>Variável</td>
+                <td class="num"><b>R$ 900</b></td>
+                <td class="num">13%</td>
+                <td>ROAS / CPL</td>
+                <td class="num meta">Variável</td>
+                <td>3–5 reservas</td>
+              </tr>
+              <tr>
+                <td class="num">vi</td>
+                <td><b>Google Performance Max</b></td>
+                <td><span class="bdg bdg-info">Google · Fundo</span></td>
+                <td>Vendas (PMax)</td>
+                <td class="num"><b>R$ 700</b></td>
+                <td class="num">10%</td>
+                <td>ROAS / CPA</td>
+                <td class="num meta">8–12x · R$ 150–250</td>
+                <td>3–5 reservas</td>
+              </tr>
+              <tr>
+                <td class="num">vii</td>
+                <td><b>Google Search Brand</b></td>
+                <td><span class="bdg bdg-info">Google · Fundo</span></td>
+                <td>Defesa de marca</td>
+                <td class="num"><b>R$ 300</b></td>
+                <td class="num">4%</td>
+                <td>CPC / CTR</td>
+                <td class="num meta">R$ 0,50–1,50</td>
+                <td>2–3 reservas</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4"><b>TOTAL · 7 campanhas (Meta + Google)</b></td>
+                <td class="num"><b>R$ 7.000</b></td>
+                <td class="num"><b>100%</b></td>
+                <td colspan="2" style="text-align:right;font-style:italic;opacity:.7">Projeção consolidada →</td>
+                <td><b>23–37 reservas</b></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:64px" class="reveal">
+      <a href="#top" class="back-top">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+        Voltar ao topo
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════ FOOTER ════════ -->
+<footer class="foot">
+  <div class="container">
+    <div class="foot-mark">
+      <div class="foot-mark-icon"><img src="https://static.wixstatic.com/media/9e0e31_d413da8154a84961a8c3ead79baf3c3e~mv2.png/v1/fill/w_192, h_192, lg_1, usm_0.66_1.00_0.01/9e0e31_d413da8154a84961a8c3ead79baf3c3e~mv2.png" alt="Trilha · símbolo"/></div>
+      <div class="foot-mark-text">
+        Trilha Performance Digital
+        <small>Plano de Mídia · Porto Kaetê Hotel · v1.0</small>
+      </div>
+    </div>
+    <p class="foot-meta">Documento estratégico · <b>Maio de 2026</b> · Confidencial</p>
+  </div>
+</footer>
+
+<script>
+// Reveal on scroll
+const io=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}
+  });
+},{threshold:.15, rootMargin:'0px 0px -60px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// Channel bars animation
+const cio=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const bars=e.target.querySelectorAll('.canal-bar');
+      bars.forEach((b, i)=>setTimeout(()=>b.classList.add('show'), i*120));
+      cio.unobserve(e.target);
+    }
+  });
+},{threshold:.3});
+document.querySelectorAll('.canal-list').forEach(el=>cio.observe(el));
+
+// Mini-funnel active state
+const sections=document.querySelectorAll('section[id]');
+const mfLinks=document.querySelectorAll('.mini-funnel a');
+const sio=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const id=e.target.id;
+      mfLinks.forEach(a=>a.classList.toggle('active', a.dataset.target===id));
+    }
+  });
+},{threshold:.3});
+sections.forEach(s=>sio.observe(s));
+</script>
+</body>
+</html>
