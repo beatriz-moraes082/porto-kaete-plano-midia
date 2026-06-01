@@ -88,8 +88,8 @@ h2.section-title em.pk{color:var(--pk-brown)}
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(233,232,228,.85);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(217,207,194,.4)}
 .nav-inner{max-width:var(--max);margin:0 auto;padding:18px var(--gutter);display:flex;align-items:center;justify-content:space-between;gap:24px}
 .nav-brand{display:flex;align-items:center;gap:14px}
-.nav-mark{width:38px;height:38px;display:flex;align-items:center;justify-content:center}
-.nav-mark img{width:100%;height:100%;object-fit:contain}
+.nav-mark{width:auto;height:32px;display:flex;align-items:center;justify-content:flex-start}
+.nav-mark img{width:auto;height:100%;object-fit:contain;display:block}
 .nav-brand-text{display:flex;flex-direction:column;line-height:1.1}
 .nav-brand-text small{font-size:10px;color:var(--muted);font-weight:500;letter-spacing:.04em}
 .nav-brand-text b{font-size:14px;color:var(--text);font-weight:600;letter-spacing:-0.01em}
@@ -502,8 +502,8 @@ section.dark .metrics-table tr:hover td{background:rgba(238,76,32,.08)}
 /* ───── FOOTER ───── */
 .foot{background:var(--bg-dark);color:rgba(233,232,228,.7);padding:64px 0 32px;text-align:center}
 .foot-mark{display:inline-flex;align-items:center;gap:14px;margin-bottom:24px}
-.foot-mark-icon{width:48px;height:48px;display:flex;align-items:center;justify-content:center}
-.foot-mark-icon img{width:100%;height:100%;object-fit:contain}
+.foot-mark-icon{width:auto;height:auto;display:flex;align-items:center;justify-content:center}
+.foot-mark-icon img{width:100%;height:auto;object-fit:contain;display:block}
 .foot-mark-text{text-align:left;font-family:var(--serif);font-weight:500;font-size:18px;color:var(--bg);letter-spacing:-0.02em}
 .foot-mark-text small{display:block;font-family:var(--sans);font-size:11px;font-weight:500;color:rgba(233,232,228,.5);letter-spacing:.05em;margin-top:2px;font-style:normal}
 .foot-meta{font-size:12px;color:rgba(233,232,228,.5);letter-spacing:.05em;margin-top:14px}
@@ -532,9 +532,9 @@ section.dark .metrics-table tr:hover td{background:rgba(238,76,32,.08)}
 <nav class="nav">
   <div class="nav-inner">
     <a href="#top" class="nav-brand" style="text-decoration:none">
-      <div class="nav-mark"><img src="imagens/trilha-logo.png" alt="Trilha · símbolo"/></div>
+      <div class="nav-mark"><img src="imagens/trilha-full.png" alt="Trilha Performance Digital"/></div>
       <div class="nav-brand-text">
-        <small>TRILHA · PERFORMANCE DIGITAL</small>
+        <small>Plano de Mídia</small>
         <b>Porto Kaetê Hotel</b>
       </div>
     </a>
@@ -1532,7 +1532,7 @@ section.dark .metrics-table tr:hover td{background:rgba(238,76,32,.08)}
 <footer class="foot">
   <div class="container">
     <div class="foot-mark" style="flex-direction:column;align-items:center;gap:14px">
-      <div class="foot-mark-icon" style="width:64px;height:64px"><img src="imagens/trilha-logo.png" alt="Trilha Performance Digital"/></div>
+      <div class="foot-mark-icon" style="width:220px"><img src="imagens/trilha-full.png" alt="Trilha Performance Digital"/></div>
       <div class="foot-mark-text" style="text-align:center;font-size:12px;color:rgba(233,232,228,.6);font-family:var(--sans);font-weight:500;letter-spacing:.05em;font-style:normal">
         Plano de Mídia · Porto Kaetê Hotel · v1.0
       </div>
